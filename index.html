@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HZS - Coming Soon!</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Particle JS Container-->
+    <div id="particles-js">
+      <div class="text1">
+        <img class="glitch-img" src="hzs-logo-2.png" alt="" />
+        <p id="greeting"></p>
+        <p id="greeting1"></p>
+      </div>
+    </div>
+
+    <!--Particle JS CDN-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.json loaded');
+      });
+    </script>
+    <script>
+      var greet = new Array('SOON!', 'COMING', 'HZS');
+
+      var counter = 0;
+      document.getElementById('greeting').innerHTML = greet[counter];
+
+      Changegreeting1();
+      function Changegreeting1() {
+        incrementIndex();
+        document.getElementById('greeting1').innerHTML = greet[counter];
+
+        document.getElementById('greeting').style.opacity = 0;
+
+        document.getElementById('greeting1').style.opacity = 1;
+
+        setTimeout(Changegreeting, 1500);
+      }
+      function Changegreeting() {
+        incrementIndex();
+        document.getElementById('greeting').innerHTML = greet[counter];
+
+        document.getElementById('greeting').style.opacity = 1;
+
+        document.getElementById('greeting1').style.opacity = 0;
+
+        setTimeout(Changegreeting1, 1500);
+      }
+      function incrementIndex() {
+        if (counter < greet.length - 1) {
+          counter++;
+        } else {
+          counter = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

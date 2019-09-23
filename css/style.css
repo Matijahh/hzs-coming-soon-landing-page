@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Permanent+Marker|Raleway|Roboto+Mono|Turret+Road&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Alternativne boje pozadine : 
+      #275a53
+      #323846
+      #174240
+      #2c393f
+*/
+
+#particles-js {
+  background: #2c393f;
+  height: 100vh;
+}
+
+.text1 img {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 3px 15px rgba(0, 255, 163, 0.7));
+  animation: fadein 6s;
+}
+
+.text1 p {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Turret Road', cursive;
+  font-weight: bolder;
+  color: #00ffa3;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+#greeting {
+  transition: opacity 1s;
+}
+#greeting1 {
+  transition: opacity 1s;
+  position: absolute;
+  top: -100px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .text1 p {
+    top: 65%;
+    left: 50%;
+  }
+
+  .text1 img {
+    top: 35%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  .text1 img {
+    width: 200px;
+  }
+}
