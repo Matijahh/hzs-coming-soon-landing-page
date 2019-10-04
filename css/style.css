@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Black|Cairo|Press+Start+2P|Roboto+Mono|Russo+One|Source+Code+Pro|Ubuntu|Yeseva+One&display=swap');
 
 body {
   margin: 0;
@@ -32,7 +32,7 @@ body {
 .text1 p {
   margin: 0;
   font-size: 60px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Archivo Black', sans-serif;
   font-weight: bolder;
   color: #00ffa3;
   position: absolute;
@@ -61,6 +61,7 @@ body {
 
 @media (max-width: 750px) {
   .text1 p {
+    font-size: 45px;
     top: 65%;
     left: 50%;
   }
