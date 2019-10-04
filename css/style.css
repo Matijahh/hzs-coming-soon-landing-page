@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit|Permanent+Marker|Raleway|Roboto+Mono|Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 body {
   margin: 0;
@@ -31,8 +31,8 @@ body {
 
 .text1 p {
   margin: 0;
-  font-size: 50px;
-  font-family: 'Turret Road', cursive;
+  font-size: 60px;
+  font-family: 'Righteous', cursive;
   font-weight: bolder;
   color: #00ffa3;
   position: absolute;
