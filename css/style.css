@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Black|Cairo|Press+Start+2P|Roboto+Mono|Russo+One|Source+Code+Pro|Ubuntu|Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
 body {
   margin: 0;
@@ -32,7 +32,7 @@ body {
 .text1 p {
   margin: 0;
   font-size: 60px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Audiowide', cursive;
   font-weight: bolder;
   color: #00ffa3;
   position: absolute;
